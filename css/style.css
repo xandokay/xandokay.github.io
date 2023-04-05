@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bggif {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+
+.body {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    padding: .3%;
+    margin: 0;
+    display: flex;
+    border-radius: 27px;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+.socialcons {
+    width: 75px;
+    transition: .5s;
+}
+.socialcons:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -4px);
+}
+
+.Hlogo {
+    width: 400px;
+    position: absolute;
+    display: flex;
+    top: 47%;
+    left: 49.5%; 
+    transform: translate( -50%, -50%);
+    transition: .5s;
+}
+
+.Hlogo:hover {
+    width: 435px;
+    cursor: none;
+}
+
+.sitetitle {
+    width: 300px;
+    display: flex;
+    top: 98%;
+    left: 50.6%; 
+    transform: translate( -50%, -50%);
+    position: absolute;
+}
+
+/* for the phone */
+@media(max-width: 512px){
+    .Hlogo {
+        top: 40%;
+    }
+    .socialcons {
+    width: 70px;
+    }
+    .sitetitle {
+       /* top: 59% */
+        visibility: hidden;
+    }
+    .Hclick {
+        visibility: hidden;
+    }
+
+}
+
+@media(max-width: 320px) and (max-height: 568px){
+    .Hlogo {
+        top: 37%;
+    }
+    .sitetitle {
+        top: 62%;
+    }
+}
+
+@media(max-width: 1024px) and (max-height: 600px){
+    .Hlogo {
+        top: 37%;
+    }
+    .sitetitle {
+        top: 62%;
+    }
+}
+
+@media(max-width: 375px) and (max-height: 667px){
+    .Hlogo {
+        top: 36%;
+    }
+    .sitetitle {
+        top: 63%;
+    }
+}
