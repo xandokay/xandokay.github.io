@@ -6,10 +6,10 @@ var sound = new Howl({
 
 function playSound() {
     sound.play();
-    document.removeEventListener('click', playSound);
 }
 
-document.addEventListener('click', playSound);
+// Play sound immediately on page load
+playSound();
 
 if(document.addEventListener){
 	document.addEventListener("DOMContentLoaded", function(){
@@ -22,9 +22,7 @@ if(document.addEventListener){
 }
 
 function loaded(){
-
 	setInterval(loop, 350);
-
 }
 
 var x = 0;
@@ -32,7 +30,6 @@ var x = 0;
 var titleText = [ "🖤 xan", "🖤 xa", "🖤 x", "🖤", "🖤 x", "🖤 xa", "🖤 xan"];
 
 function loop(){
-
 	document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
-
 }
+
