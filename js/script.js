@@ -29,7 +29,7 @@ function loaded(){
 
 var x = 0;
 
-var titleText = [ "🖤 soft", "🖤 sof", "🖤 so", "🖤 s", "🖤 so", "🖤 sof", "🖤 soft"];
+var titleText = [ "🖤 xan", "🖤 xa", "🖤 x", "🖤 xa", "🖤 xan"];
 
 function loop(){
 
